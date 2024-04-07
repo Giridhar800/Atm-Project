@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Balance Inquiry</title>
+</head>
+<body>
+    <h1>Balance Inquiry</h1>
+    <form method="post">
+        {% csrf_token %}
+        Account Number: <input type="text" name="account_number"><br><br>
+        <input type="submit" value="Check Balance">
+    </form>
+</body>
+</html>
